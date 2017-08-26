@@ -1,0 +1,32 @@
+<h1>Adventurous</h1>
+
+<% if @user.errors.any? %>
+<ol>
+  <% @user.errors.full_messages.each do |msg| %>
+  <li><%= msg %></li>
+  <% end %>
+</ol>
+<% end %>
+
+<%= form_for @user do |f| %>
+<fieldset>
+  <%=  f.text_field :name, :placeholder => 'Name', :required => 'true' %>
+</fieldset>
+
+<fieldset>
+  <%= f.email_field :email, :placeholder => 'Email', :required => 'true'%>
+</fieldset>
+
+<fieldset>
+  <%= f.password_field :password, :placeholder => 'Password'%>
+</fieldset>
+
+<fieldset>
+  <%= f.password_field :password_confirmation, :placeholder => 'Confirm Password'  %>
+</fieldset>
+
+
+<%= f.submit "Sign Up" %>
+
+
+<% end %>

@@ -1,0 +1,10 @@
+<h1>Welcome to images page</h1>
+
+<% @images.each do |i| %>
+<p>
+  <a href="/image/<%= i.id %>">
+<%= image_tag i.photo %>
+
+</a>
+</p>
+<% end %>
