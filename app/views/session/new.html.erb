@@ -1,5 +1,19 @@
-<h1>Sign In</h1>
+<%= image_tag 'Web-9-8-2012-Kayak-Sunset.jpg', :class => 'home-img' %>
+<nav>
+  <!-- <%= link_to 'Home', images_path %> -->
 
+  <% if @current_user.present? %>
+    <%= link_to "Edit profile", edit_user_path(@current_user) %>
+    <%= link_to "Sign out #{ @current_user.name }", login_path, :method => 'delete' %>
+  <% else %>
+    <%= link_to 'Sign up', new_user_path %>
+    <!-- <%= link_to 'Sign in', login_path %> -->
+  <% end %>
+</nav>
+<div class="sign-container">
+<h1>Adventurous</h1>
+
+<div class = "table">
 <% if flash[:error].present? %>
   <p class="error">
     <%= flash[:error] %>
@@ -7,11 +21,17 @@
 <% end %>
 
 <%= form_tag login_path do %>
-  <%= label_tag :email %>
-  <%= email_field_tag :email, nil %>
 
-  <%= label_tag :password %>
-  <%= password_field_tag :password, nil %>
-
+<fieldset>
+  <%= email_field_tag :email, nil, :placeholder => 'Email' %>
+</fieldset>
+<fieldset>
+  <%= password_field_tag :password, nil, :placeholder => 'Password'%>
+</fieldset>
+</div>
+<div class="submit">
   <%= submit_tag 'Login' %>
+
 <% end %>
+</div>
+</div>

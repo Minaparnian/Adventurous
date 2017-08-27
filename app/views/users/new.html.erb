@@ -1,5 +1,19 @@
-<h1>Adventurous</h1>
 
+<%= image_tag '951820009082492817.jpg', :class => 'home-img' %>
+<nav>
+  <!-- <%= link_to 'Home', images_path %> -->
+
+  <% if @current_user.present? %>
+    <%= link_to "Edit profile", edit_user_path(@current_user) %>
+    <%= link_to "Sign out #{ @current_user.name }", login_path, :method => 'delete' %>
+  <% else %>
+    <!-- <%= link_to 'Sign up', new_user_path %> -->
+    <%= link_to 'Sign in', login_path %>
+  <% end %>
+</nav>
+<div class="sign-container">
+<h1>Adventurous</h1>
+<div class = "table">
 <% if @user.errors.any? %>
 <ol>
   <% @user.errors.full_messages.each do |msg| %>
@@ -25,8 +39,10 @@
   <%= f.password_field :password_confirmation, :placeholder => 'Confirm Password'  %>
 </fieldset>
 
-
+</div>
+<div class="submit">
 <%= f.submit "Sign Up" %>
 
-
 <% end %>
+</div>
+</div>

@@ -10,17 +10,7 @@
 
   <body>
 
-    <nav>
-      <%= link_to 'Home', images_path %>
 
-      <% if @current_user.present? %>
-        <%= link_to "Edit profile", edit_user_path(@current_user) %>
-        <%= link_to "Sign out #{ @current_user.name }", login_path, :method => 'delete' %>
-      <% else %>
-        <%= link_to 'Sign up', new_user_path %>
-        <%= link_to 'Sign in', login_path %>
-      <% end %>
-    </nav>
 
     <%= yield %>
   </body>
