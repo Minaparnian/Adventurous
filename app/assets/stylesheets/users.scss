@@ -51,7 +51,7 @@ h1 {
 
 }
 
-nav {
+.nav-sign {
   position: fixed;
   height: 30px;
   width: 70px;
@@ -70,7 +70,21 @@ a {
 }
 
 
-.all-img {
-  height: 200px;
-  width: 200px;
+.all_img {
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+  padding: 40px;
+
+}
+
+.all_img_container {
+  width: 1150px;
+  margin: 0 auto;
+
+}
+
+.add-img {
+  // position: fixed;
+
 }

@@ -1,23 +1,26 @@
-<h1>Welcome to images page</h1>
 <nav>
   <!-- <%= link_to 'Home', images_path %> -->
 
   <% if @current_user.present? %>
-    <%= link_to "Edit profile", edit_user_path(@current_user) %>
-    <%= link_to "Sign out #{ @current_user.name }", login_path, :method => 'delete' %>
+    <%= link_to "Edit profile", edit_user_path(@current_user), :class => "home-nav"%>
+    <%= link_to "Sign out #{ @current_user.name }", login_path, :method => 'delete', :class => "home-nav" %>
   <% else %>
     <%= link_to 'Sign up', new_user_path %>
     <!-- <%= link_to 'Sign in', login_path %> -->
   <% end %>
 </nav>
+<h1>Welcome to images page</h1>
 
+<div class="all_img_container">
 <% @images.each do |i|%>
 
-<p>
-  <a href="/image/<%= i.id %>">
-<%= image_tag i.photo  %>
 
+  <a href="/image/<%= i.id %>">
+<%= image_tag i.photo, :class => "all_img"%>
 </a>
-</p>
+
 
 <% end %>
+</div>
+
+<button class="add-img">Add Image</button>
