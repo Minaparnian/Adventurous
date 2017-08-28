@@ -88,3 +88,44 @@ a {
   // position: fixed;
 
 }
+
+
+#container {
+  width: 960px;
+  margin: auto;
+  background-color: white;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+
+#main {
+  display: inline-block;
+  width: 75%;
+  background-color: #2a2f2a;
+  padding: 5em 0em;
+}
+
+#aside {
+    display: inline-block;
+    width: 21%;
+    vertical-align: top;
+    padding: 1em;
+
+}
+
+.main_img {
+  margin: 0 auto;
+  display: block;
+  width: 720px;
+
+
+
+}
+
+
+
+
+body.images-show {
+  background-color: #E7E8E7;
+}

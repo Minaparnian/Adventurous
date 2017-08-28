@@ -4,7 +4,7 @@ class CreateImages < ActiveRecord::Migration[5.1]
       t.text :name
       t.text :history
       t.text :location
-      t.text :photo
+      t.text :image
       t.integer :user_id
 
       t.timestamps

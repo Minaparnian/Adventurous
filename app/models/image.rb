@@ -6,12 +6,13 @@
 #  name       :text
 #  history    :text
 #  location   :text
-#  photo      :text
+#  image      :text
 #  user_id    :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
 class Image < ApplicationRecord
-  belongs_to :user, :optional => true 
+  belongs_to :user, :optional => true
+  validates :image, :presence => true
 end

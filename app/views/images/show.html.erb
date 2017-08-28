@@ -1,1 +1,19 @@
-<h1>Show image</h1>
+
+<div id ="container">
+  <div id = "main">
+<%= image_tag @image.image, :class => 'main_img' %>
+  </div><!--main-->
+
+
+     <div id ="aside">
+<h1><%= @image.name %></h1>
+<h4>History:<%= @image.history %></h4>
+<h4>Location:<%= @image.location %></h4>
+<%= link_to "Delete", image_path, :method => 'delete' %>
+<%= link_to "Edit", edit_image_path %>
+     </div><!--aside-->
+
+
+
+
+</div><!--container-->

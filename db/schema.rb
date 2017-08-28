@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20170825063154) do
     t.text "name"
     t.text "history"
     t.text "location"
-    t.text "photo"
+    t.text "image"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -1,5 +1,5 @@
 <nav>
-  <!-- <%= link_to 'Home', images_path %> -->
+  <%= link_to 'Home', images_path %>
 
   <% if @current_user.present? %>
     <%= link_to "Edit profile", edit_user_path(@current_user), :class => "home-nav"%>
@@ -14,13 +14,12 @@
 <div class="all_img_container">
 <% @images.each do |i|%>
 
-
-  <a href="/image/<%= i.id %>">
-<%= image_tag i.photo, :class => "all_img"%>
+  <a href="/images/<%= i.id %>">
+<%= image_tag i.image, :class => "all_img"%>
 </a>
 
 
 <% end %>
 </div>
 
-<button class="add-img">Add Image</button>
+<%= link_to "Add Image", new_image_path %>

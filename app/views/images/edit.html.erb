@@ -1,0 +1,33 @@
+<nav>
+  <%= link_to 'Home', images_path %>
+</nav>
+<h1>Edit</h1>
+
+<%= form_for @image do |f| %>
+
+<fieldset>
+  <%= f.label :name %>
+  <%= f.text_field :name, :autofocus => true, :placeholder => "Name" %>
+</fieldset>
+
+<fieldset>
+  <%= f.label :history %>
+  <%= f.text_field :history, :placeholder => "History" %>
+</fieldset>
+
+<fieldset>
+  <%= f.label :location %>
+  <%= f.text_field :location, :placeholder => "Location" %>
+</fieldset>
+
+<fieldset>
+  <%= f.label :image %>
+  <%= f.url_field :image, :placeholder => "Image", :required => true%>
+</fieldset>
+
+
+<fieldset>
+<label></label>
+<%= f.submit "Edit" %>
+</fieldset>
+<% end %>
