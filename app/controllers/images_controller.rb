@@ -20,7 +20,7 @@ class ImagesController < ApplicationController
  def update
    image = Image.find params[:id]
    image.update image_params
-   redirect_to image
+   redirect_to image_path
  end
 
  def edit
@@ -28,9 +28,9 @@ class ImagesController < ApplicationController
  end
 
  def destroy
-   @image = Image.find params[:id]
-   user.destroy.id
-   redirect_to image
+   image = Image.find params[:id]
+   Image.destroy image.id
+   redirect_to image_path
  end
 
  private
