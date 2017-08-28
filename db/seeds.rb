@@ -28,9 +28,22 @@ i5 = Image.create :name => 'Main Range National Park', :history => 'The Main Ran
 i6 = Image.create :name => 'Girraween National Park', :history => 'Girraween National Park is an area of the Granite Belt in the Darling Downs region of Queensland, Australia reserved as a national park. Girraween is known for its spectacular flowers, dramatic landscapes and unique wildlife. Bushwalking and rock climbing are the most popular activities in the park.', :location => 'Pyramids Rd, Wyberba QLD 4382',
 :image => 'https://abw.blob.core.windows.net/img/qld/girraween-national-park/castle-rock/7876.jpg'
 
+
+Comment.destroy_all
+
+c1 = Comment.create :content => 'Thats really nice place!'
+c2 = Comment.create :content => 'Hey, when we can catch up in this place?'
+c3 = Comment.create :content => 'Such a nice place!'
+c4 = Comment.create :content => 'I heve been there several time, i really recomend though'
 ##################################################################################
 
 #Assosiations
 
 u1.images << i1 << i2 << i3 << i4 << i5 << i6
 u2.images << i2
+
+
+u1.comments << c1 << c2
+u2.comments << c3 << c4
+i1.comments << c1 << c4
+i2.comments << c2 << c3

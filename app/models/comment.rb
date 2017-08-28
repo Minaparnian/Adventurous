@@ -1,19 +1,16 @@
 # == Schema Information
 #
-# Table name: images
+# Table name: comments
 #
 #  id         :integer          not null, primary key
-#  name       :text
-#  history    :text
-#  location   :text
-#  image      :text
 #  user_id    :integer
+#  image_id   :integer
+#  content    :text
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
-class Image < ApplicationRecord
+class Comment < ApplicationRecord
   belongs_to :user, :optional => true
-  validates :image, :presence => true
-  has_many :comments
+  belongs_to :image, :optional => true
 end
