@@ -11,14 +11,19 @@
 <h4>Location:<%= @image.location %></h4>
 <%= link_to "Delete", image_path, :method => 'delete' %>
 <%= link_to "Edit", edit_image_path %>
+
      </div><!--aside-->
 
-     <% @image.comments.each do |c|%>
-
-      <p><%= c.content %></p>
-        <p><%= c.user.name %></p>
-
-
+   <div class="comment">
+     <% @image.comments.each do |comment|%>
+     <p><%= comment.content %></p>
+   </div><!--comment-->
+      <% end %>
+     <%= form_for Comment.new do |f| %>
+     <%= f.label :content %>
+     <%= f.text_area :content %>
+     <%= hidden_field_tag :image_id, @image.id %>
+     <%= f.submit %>
      <% end %>
 
 

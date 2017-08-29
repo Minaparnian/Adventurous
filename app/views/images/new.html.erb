@@ -1,8 +1,9 @@
-<nav>
+<nav class="nav-sign">
   <%= link_to 'Home', images_path %>
 </nav>
+<div class="sign-container">
 <h1>Add your new image</h1>
-
+<div class = "table">
 <%= form_for @image do |f| %>
 
 <fieldset>
@@ -25,10 +26,13 @@
   <%= f.url_field :image, :placeholder => "Image", :required => true%>
 </fieldset>
 
-
+</div>
+<div class="submit">
 <fieldset>
 <label></label>
 <%= f.submit "Create" %>
 </fieldset>
 <% end %>
-<%= link_to 'Add image', new_image_path %>
+
+</div>
+</div>

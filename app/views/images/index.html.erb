@@ -1,5 +1,7 @@
-<nav>
-  <%= link_to 'Home', images_path %>
+<div class="cover-photo">
+</div>
+<div class="info">
+  <%= link_to 'Home', images_path%>
 
   <% if @current_user.present? %>
     <%= link_to "Edit profile", edit_user_path(@current_user), :class => "home-nav"%>
@@ -8,9 +10,14 @@
     <%= link_to 'Sign up', new_user_path %>
     <!-- <%= link_to 'Sign in', login_path %> -->
   <% end %>
-</nav>
-<h1>Welcome to images page</h1>
+</div>
+<div class="round"></div>
 
+<nav>
+
+</nav>
+
+<div class="all_img_container-container">
 <div class="all_img_container">
 <% @images.each do |i|%>
 
@@ -21,5 +28,5 @@
 
 <% end %>
 </div>
-
+</div>
 <%= link_to "Add Image", new_image_path %>

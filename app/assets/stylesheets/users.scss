@@ -1,6 +1,4 @@
-body {
-  height: 100%;
-}
+
 
 
 input {
@@ -28,18 +26,20 @@ h1 {
 
 .sign-container {
 
-  height: 700px;
-  width: 500px;
-  background-color: rgba(255, 255, 255, .3);
-  margin: 0 auto;
-
+  width:100%;
+    margin:auto;
+    max-width:525px;
+    min-height:670px;
+    position:relative;
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
+
+
 
 .nav-sign {
   position: fixed;
   height: 30px;
   width: 70px;
-  background-color: rgba(255, 255, 255, .3);
   margin-top: 0;
   margin-left: 10px;
   text-align: center;
@@ -54,28 +54,56 @@ a {
 }
 
 
+
+.cover-photo {
+  height: 200px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.info {
+  height: 50px;
+  width: 100%;
+  border: 1px solid black;
+
+}
+//
+// .round {
+//   height: 200px;
+//   width: 200px;
+//   border-radius: 100%;
+//   border: 1px solid black;
+//   position: absolute;
+//   top: 100px;
+//   left: 50px;
+//
+// }
 .all_img {
   height: 300px;
   width: 300px;
   display: inline-block;
-  padding: 40px;
+  padding: 10px;
+
+}
+
+.all_img_container-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
 
 }
 
 .all_img_container {
-  width: 1150px;
-  margin: 0 auto;
 
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
 }
 
-.add-img {
-  // position: fixed;
-
-}
 
 
 #container {
-  width: 960px;
+  max-width: 960px;
   margin: auto;
   background-color: white;
   margin-top: 100px;
@@ -105,14 +133,14 @@ a {
 
 }
 
-.home-img {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100vw;
-  background-size: cover;
-}
+// .home-img {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: -1;
+//   width: 100vw;
+//   background-size: cover;
+// }
 
 body.images-show {
   background-color: #E7E8E7;
@@ -122,30 +150,24 @@ body.images-show {
 
 
 body.session-new {
-  background-image: url(951820009082492817.jpg);
-  min-height: 100%;
-  min-width: 1024px;
+  background-image: url(adventure-photographer-patrice-mestari-1024x683.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
 
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
 
 }
 
 body.users-new {
 
-  background-image: url(Web-9-8-2012-Kayak-Sunset.jpg);
-  min-height: 100%;
-  min-width: 1024px;
+  background-image: url(Yosemite-Engagement-100-1100x550.jpg);
 
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-
-  /* Set up positioning */
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // z-index: -1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
 
 }
