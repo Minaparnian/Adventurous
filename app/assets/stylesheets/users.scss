@@ -1,5 +1,4 @@
-
-
+@import url('https://fonts.googleapis.com/css?family=Lobster|Shrikhand');
 
 input {
   text-align: left;
@@ -19,8 +18,11 @@ input {
 }
 
 
-h1 {
+.adven-title {
   text-align: center;
+  font-family: 'Shrikhand', cursive;
+  color: white;
+  font-size: 50px;
 
 }
 
@@ -125,14 +127,14 @@ a {
     padding: 1em;
 
 }
-
+// @media (max-width: 850px) {
 .main_img {
   margin: 0 auto;
   display: block;
   width: 720px;
 
 }
-
+// }
 // .home-img {
 //   position: fixed;
 //   top: 0;
@@ -169,5 +171,20 @@ body.users-new {
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
+
+}
+
+.comment-container {
+  height: 200px;
+  width: 187px;
+  box-shadow:0 1px 10px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+  line-height: 1px;
+  overflow: auto;
+  padding: 5px;
+  padding-bottom:2px;
+}
+
+.create-button-comment {
+  width: 100px;
 
 }
