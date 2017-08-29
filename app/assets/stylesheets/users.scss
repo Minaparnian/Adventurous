@@ -63,6 +63,9 @@ a {
 
 }
 
+.a-black {
+  color: black;
+}
 
 .info-nav {
   height: 50px;
@@ -146,7 +149,7 @@ a {
 }
 
 .create-button-comment {
-  width: 100px;
+  width: 120px;
 
 }
 
@@ -156,6 +159,7 @@ a {
 
 .user-name {
   font-weight: bold;
+  color: #FF6F69
 }
 
 
@@ -283,4 +287,8 @@ h1 {
   height: 150px;
   width: 100%;
 
+}
+
+.link-under-image {
+  margin-top: 20px;
 }

@@ -2,15 +2,15 @@
 <div id ="container">
   <div id = "main">
 <%= link_to image_tag(@image.image, :class => 'main_img'), images_path %>
-<%= link_to "Delete", image_path, :method => 'delete' %>
-<%= link_to "Edit", edit_image_path %>
+<%= link_to "Delete", image_path, :method => 'delete', :class => "link-under-image" %>
+<%= link_to "Edit", edit_image_path, :class => "link-under-image" %>
   </div><!--main-->
 
 
      <div id ="aside">
 <h1 class="comment-name "><%= @image.name %></h1>
 <%= truncate(@image.history, :length => 100 )%>
-<%= link_to "Read more", "https://en.wikipedia.org/w/index.php?search=#{@image.name}" %>
+<%= link_to "Read more", "https://en.wikipedia.org/w/index.php?search=#{@image.name}", :class => "a-black" %>
 <h4>Location:<%= @image.location %></h4>
 
 
@@ -24,7 +24,7 @@
    </pre><!--comment-container-->
 
      <%= form_for Comment.new do |f| %>
-     <%= f.label :comment %>
+     <%= f.label :comment, :class => "a-black" %>
      <%= f.text_area :content %>
      <%= hidden_field_tag :image_id, @image.id %>
      <%= f.submit 'create Comment', :class => 'create-button-comment'%>
