@@ -1,14 +1,18 @@
 <div class="cover-photo">
+  <h1 class="page-image-title">Adventurous</h1>
+  <hr>
 </div>
 <div class="info-nav">
   <%= link_to 'Home', root_path%>
-
+  <%= link_to "Add Image", new_image_path %>
   <% if @current_user.present? %>
     <%= link_to "Edit profile", edit_user_path(@current_user), :class => "home-nav"%>
     <%= link_to "Sign out #{ @current_user.name }", login_path, :method => 'delete', :class => "home-nav" %>
   <% else %>
     <%= link_to 'Sign up', root_path %>
-    <!-- <%= link_to 'Sign in', login_path %> -->
+    <!-- <%= link_to 'Sign in', login_path %>
+   -->
+
   <% end %>
 </div>
 <div class="round"></div>
@@ -27,4 +31,3 @@
 <% end %>
 </div>
 </div>
-<%= link_to "Add Image", new_image_path %>

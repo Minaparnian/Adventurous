@@ -1,5 +1,6 @@
 <div class="nav">
 
+<%= link_to 'Sign up', new_user_path, :class => "" %>
 <% if @current_user.present? %>
 
 <%= link_to " #{ @current_user.name } Profile", images_path, :class => "home1-nav" %>
@@ -12,6 +13,6 @@
 
 
 <div class="main-home1">
-<h1>Adventurous</h1>
-<h3>Sharing adventurouse photo</h3>
+<h1 class="page1-title">Adventurous</h1>
+<h3 class="page1-subtitle">Share your favourite adventurous pictures...</h3>
 </div>

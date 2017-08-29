@@ -1,5 +1,6 @@
 <nav class="nav-sign">
-  <%= link_to 'Home', users_path %>
+  <%= link_to " #{ @current_user.name } Profile", images_path, :class => "home1-nav" %>
+  <% else %>
 </nav>
 <div class="sign-container">
 <h1>Add your new image</h1>
@@ -30,7 +31,7 @@
 <div class="submit">
 <fieldset>
 <label></label>
-<%= f.submit "Create" %>
+<%= f.submit "Create", :class => "button"  %>
 </fieldset>
 <% end %>
 

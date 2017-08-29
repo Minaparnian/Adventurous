@@ -1,72 +1,68 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Shrikhand');
 
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
 body.pages-index {
   margin: 0;
   padding: 0;
 }
 
-input {
-  text-align: left;
-  width: 300px;
-  height: 50px;
+body.images-new {
+  background-image: url(shutterstock_474634162.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
 
 }
+
+body.images-show {
+  background-color: #E7E8E7;
+}
+
+
+
+
+body.session-new {
+  background-image: image-url("adventure-photographer-patrice-mestari-1024x683.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+
+
+}
+
+body.users-new {
+
+  background-image: url(Yosemite-Engagement-100-1100x550.jpg);
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+
+}
+
 
 .table {
   margin: 0 auto;
   width: 300px;
 }
 
-.submit {
-  margin: 0 auto;
-  text-align: center;
-}
 
-
-.adven-title {
-  text-align: center;
-  font-family: 'Shrikhand', cursive;
-  color: white;
-  font-size: 50px;
-
-}
-
-.sign-container {
-
-  width:100%;
-    margin:auto;
-    max-width:525px;
-    min-height:670px;
-    position:relative;
-    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
-}
-
-
-
-.nav-sign {
-  position: fixed;
-  height: 30px;
-  width: 70px;
-  margin-top: 0;
-  margin-left: 10px;
-  text-align: center;
-  padding-top: 10px;
-  // display: inline;
-}
 
 a {
     text-decoration: none;
     color: white;
+    padding: 20px;
+    font-size: 17px;
 
 }
 
-
-
-.cover-photo {
-  height: 200px;
-  width: 100%;
-  border: 1px solid black;
-}
 
 .info-nav {
   height: 50px;
@@ -77,17 +73,7 @@ a {
 
 
 }
-//
-// .round {
-//   height: 200px;
-//   width: 200px;
-//   border-radius: 100%;
-//   border: 1px solid black;
-//   position: absolute;
-//   top: 100px;
-//   left: 50px;
-//
-// }
+
 .all_img {
   height: 300px;
   width: 300px;
@@ -108,6 +94,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   display: table;
+  padding-top: 80px;
 }
 
 
@@ -145,45 +132,8 @@ a {
   width: 720px;
 
 }
-// }
-// .home-img {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   z-index: -1;
-//   width: 100vw;
-//   background-size: cover;
-// }
-
-body.images-show {
-  background-color: #E7E8E7;
-}
 
 
-
-
-body.session-new {
-  background-image: image-url("adventure-photographer-patrice-mestari-1024x683.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-
-
-}
-
-body.users-new {
-
-  background-image: url(Yosemite-Engagement-100-1100x550.jpg);
-
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-
-}
 
 .comment-container {
   height: 200px;
@@ -211,7 +161,7 @@ body.users-new {
 
 .nav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #081732;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -226,7 +176,7 @@ body.users-new {
 
 .main-home1 {
 
-  background-image: url(7f20b80e4416eaa182cc85d19836a752.jpg);
+  background-image: url('Screen Shot 2017-08-29 at 8.21.13 pm.png');
 
   background-position: center center;
   background-repeat: no-repeat;
@@ -241,5 +191,96 @@ body.users-new {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+}
+
+.page1-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 60px;
+}
+
+
+.page1-subtitle {
+  margin-top: -40px;
+}
+
+
+fieldset {
+  border: none;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+
+input {
+  text-align: left;
+  font-size: 16px;
+  min-height: 50px;
+  min-width: 350px;
+
+
+}
+
+.button {
+  font-size: 16px;
+  background-color:  #004E80;
+  color: #000;
+  border: 5px solid  #004E80;
+  border-radius: 10px;
+  min-width: 353px;
+  color: white;
+  text-align: center;
+}
+
+
+.sign-container {
+
+    width:100%;
+    margin: 0 auto;
+    max-width:525px;
+    min-height:670px;
+    position:relative;
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form {
+display: block;
+
+
+}
+
+label {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: white;
+}
+
+
+.page-image-title {
+  color: #A4A3A6;
+  font-family: 'Pacifico', cursive;
+  font-size: 60px;
+  text-align: center;
+
+
+}
+
+
+.cover-photo {
+  height: 150px;
+  width: 100%;
 
 }

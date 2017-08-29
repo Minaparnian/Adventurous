@@ -7,11 +7,11 @@
     <%= link_to "Sign out #{ @current_user.name }", login_path, :method => 'delete' %>
   <% else %>
     <!-- <%= link_to 'Sign up', new_user_path %> -->
-    <%= link_to 'Sign in', login_path, :class => "btn btn-default btn-lg"%>
+    <%= link_to 'Sign in', login_path, :class => ""%>
   <% end %>
 </nav>
 <div class="sign-container">
-<h1 class="adven-title">Adventurous</h1>
+<!-- <h1 class="adven-title">Adventurous</h1> -->
 <div class = "table">
 <% if @user.errors.any? %>
 <ol>
@@ -21,6 +21,7 @@
 </ol>
 <% end %>
 
+<div class= "form">
 <%= form_for @user do |f| %>
 <fieldset>
   <%=  f.text_field :name, :placeholder => 'Name', :required => 'true' %>
@@ -40,8 +41,9 @@
 
 </div>
 <div class="submit">
-<%= f.submit "Sign Up" %>
+<%= f.submit "Sign Up", :class => "button" %>
 
 <% end %>
 </div>
 </div>
+</div><!--form-->
