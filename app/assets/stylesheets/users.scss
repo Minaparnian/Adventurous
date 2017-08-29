@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Shrikhand');
 
+body.pages-index {
+  margin: 0;
+  padding: 0;
+}
+
 input {
   text-align: left;
   width: 300px;
@@ -51,7 +56,7 @@ input {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 
 }
 
@@ -63,10 +68,13 @@ a {
   border: 1px solid black;
 }
 
-.info {
+.info-nav {
   height: 50px;
   width: 100%;
-  border: 1px solid black;
+  background-color: black;
+  display: flex;
+  align-items: center;
+
 
 }
 //
@@ -113,12 +121,14 @@ a {
   align-items: center;
 }
 
+
 #main {
   display: inline-block;
   width: 75%;
   background-color: #2a2f2a;
   padding: 5em 0em;
 }
+
 
 #aside {
     display: inline-block;
@@ -127,6 +137,7 @@ a {
     padding: 1em;
 
 }
+
 // @media (max-width: 850px) {
 .main_img {
   margin: 0 auto;
@@ -176,15 +187,59 @@ body.users-new {
 
 .comment-container {
   height: 200px;
-  width: 187px;
+  width: 157px;
   box-shadow:0 1px 10px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
   line-height: 1px;
   overflow: auto;
-  padding: 5px;
+  padding: 15px;
   padding-bottom:2px;
 }
 
 .create-button-comment {
   width: 100px;
+
+}
+
+.comment-name {
+  font-size: 30px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+
+.nav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height: 50px;
+  // center nav content
+  display: flex;
+  // justify-content: space-around; its help when you need space around your content
+  align-items: center;
+  padding-left: 20px;
+}
+
+
+.main-home1 {
+
+  background-image: url(7f20b80e4416eaa182cc85d19836a752.jpg);
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  height: 700px;
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+  color: white;
+  // flex box to center the content
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }

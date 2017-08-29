@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
 
 
-  root :to => 'users#new'
+  root :to => 'pages#index'
   resources :users
   resources :images
   resources :comments

@@ -1,0 +1,17 @@
+<div class="nav">
+
+<% if @current_user.present? %>
+
+<%= link_to " #{ @current_user.name } Profile", images_path, :class => "home1-nav" %>
+<% else %>
+
+  <%= link_to 'Sign in', login_path, :class => "home1-sign-in"%>
+<% end %>
+
+</div>
+
+
+<div class="main-home1">
+<h1>Adventurous</h1>
+<h3>Sharing adventurouse photo</h3>
+</div>

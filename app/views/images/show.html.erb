@@ -8,7 +8,7 @@
 
 
      <div id ="aside">
-<h1><%= @image.name %></h1>
+<h1 class="comment-name "><%= @image.name %></h1>
 <%= truncate(@image.history, :length => 100 )%>
 <%= link_to "Read more", "https://en.wikipedia.org/w/index.php?search=#{@image.name}" %>
 <h4>Location:<%= @image.location %></h4>
@@ -18,7 +18,7 @@
 
    <pre class="comment-container">
      <% @image.comments.each do |comment|%>
-     <p><%= @current_user.name %></p>
+     <p class="user-name"><%= @current_user.name %></p>
      <p><%= comment.content %></p>
      <% end %>
    </pre><!--comment-container-->
