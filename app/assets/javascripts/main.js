@@ -1,1 +1,6 @@
-console.log('hello from js');
+$(document).ready(function(){
+
+  $('.hamburger-container').click(function(){
+    $(this).toggleClass('open');
+  });
+});

@@ -1,7 +1,9 @@
 <nav class="nav-sign">
-  <%= link_to " #{ @current_user.name } Profile", images_path%>
-  <% else %>
+  <a href="/images">
+    <img src="/assets/home-icon.png"  class="home-icon">
+  </a>
 </nav>
+
 <div class="sign-container">
 <h1>Add your new image</h1>
 <div class = "table">
@@ -29,7 +31,7 @@
   <%= f.file_field :image, :placeholder => "Image", :required => true%>
 </fieldset>
 
-</div>
+</div><!--table-->
 <div class="submit">
 <fieldset>
 <label></label>
@@ -37,5 +39,5 @@
 </fieldset>
 <% end %>
 
-</div>
-</div>
+</div><!--sign-container-->
+</div><!--submit-->
