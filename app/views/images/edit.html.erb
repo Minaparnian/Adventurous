@@ -1,8 +1,9 @@
-<nav>
-  <%= link_to 'Home', images_path %>
+<nav class="nav-sign">
+  <%= link_to 'Home', images_path, :class => 'a-white'%>
 </nav>
+<div class="sign-container">
 <h1>Edit</h1>
-
+<div class = "table">
 <%= form_for @image do |f| %>
 
 <fieldset>
@@ -28,6 +29,8 @@
 
 <fieldset>
 <label></label>
-<%= f.submit "Edit" %>
+<%= f.submit "Edit", :class => 'button' %>
 </fieldset>
 <% end %>
+</div>
+</div>

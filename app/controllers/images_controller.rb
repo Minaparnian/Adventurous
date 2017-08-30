@@ -8,13 +8,23 @@ class ImagesController < ApplicationController
     @image = Image.find params[:id]
   end
 
+  def map
+    @image = Image.find params[:id]
+
+  end
+
   def new
    @image = Image.new
  end
 
+
+
  def create
-   image = Image.create image_params
-   redirect_to image
+   cloudinary = Cloudinary::Uploader.upload( params["image"]["image"])
+   image = Image.new(image_params)
+   image.image = cloudinary["url"]
+   image.save
+   redirect_to images_path
  end
 
  def update

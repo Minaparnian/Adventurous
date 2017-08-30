@@ -13,7 +13,7 @@ i1 = Image.create :name => 'Wattamolla Beach', :history => 'Wattamolla is the lo
 :image => 'http://footballsandstilettos.com/wp-content/uploads/2015/06/IMG_8309.jpg'
 
 i2 = Image.create :name => 'Blue Mountains National Park', :history => 'Blue Mountains National Park is a vast region west of Sydney, Australia, and part of the Great Dividing Range. The Echo Point lookout, near the town of Katoomba, has panoramic views of Jamison Valley and the Three Sisters, a towering sandstone formation and sacred Aboriginal site. Trails lead through bushland, home to lyrebirds and crimson rosella parrots, to the Giant Stairway, which descends to Jamison Valley.', :location => 'New South Wales',
-:image => 'https://upload.wikimedia.org/wikipedia/commons/e/e4/Blue_mountains_-_three_sisters.jpg'
+:image => 'http://www.visitnsw.com/nsw-tales/wp-content/uploads/2015/12/Hanging-Rock-Blue-Mountains.jpg'
 
 i3 = Image.create :name => 'Caves Beach', :history => 'Caves Beach is a locality on the Swansea peninsula between Lake Macquarie and the Pacific Ocean in New South Wales, Australia. It is part of the City of Lake Macquarie local government area. The locality is named for the large number of caves on the nearby coastline. It has a surfing beach which is popular with the local surfers. It is highly popular for spearfishing, with the premier target species being the elusive red morwong.', :location => '
 Caves Beach, New South Wales 2281',

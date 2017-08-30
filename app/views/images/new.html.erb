@@ -1,11 +1,13 @@
 <nav class="nav-sign">
-  <%= link_to " #{ @current_user.name } Profile", images_path, :class => "home1-nav" %>
+  <%= link_to " #{ @current_user.name } Profile", images_path%>
   <% else %>
 </nav>
 <div class="sign-container">
 <h1>Add your new image</h1>
 <div class = "table">
-<%= form_for @image do |f| %>
+
+
+<%= form_for @image, :html => {:multipart => true} do |f| %>
 
 <fieldset>
   <%= f.label :name %>
@@ -24,7 +26,7 @@
 
 <fieldset>
   <%= f.label :image %>
-  <%= f.url_field :image, :placeholder => "Image", :required => true%>
+  <%= f.file_field :image, :placeholder => "Image", :required => true%>
 </fieldset>
 
 </div>
