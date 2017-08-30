@@ -11,7 +11,7 @@
 
      <div id ="aside">
 <h1 class="comment-name "><%= @image.name %></h1>
-<%= truncate(@image.history, :length => 200 )%>
+<%= truncate(@image.history, :length => 200 )%><br />
 <%= link_to "Read more", "https://en.wikipedia.org/w/index.php?search=#{@image.name}", :class => "a-pink" %>
 <h4 class = "a-pink">Find location<%= link_to @image.location, map_path(@image), :class => "a-black" %></h4>
 

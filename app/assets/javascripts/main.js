@@ -1,6 +1,5 @@
 $(document).ready(function(){
-
-  $('.hamburger-container').click(function(){
-    $(this).toggleClass('open');
-  });
+    $('#nav-icon1').click(function(){
+        $(this).toggleClass('open');
+    });
 });
