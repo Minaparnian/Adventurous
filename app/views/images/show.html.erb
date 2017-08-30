@@ -18,7 +18,7 @@
 
    <pre class="comment-container">
      <% @image.comments.each do |comment|%>
-     <p class="user-name"><%= @current_user.name %></p>
+     <p class="user-name"><%= comment.user.name %></p>
      <p><%= comment.content %></p>
      <% end %>
    </pre><!--comment-container-->

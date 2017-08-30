@@ -70,13 +70,22 @@ a {
 .info-nav {
   height: 50px;
   width: 100%;
-  background-color: black;
   display: flex;
   align-items: center;
-
+  justify-content: center;
 
 }
 
+.home-nav {
+  color: #A4A3A6;
+  font-size: 20px;
+
+}
+// .square-img {
+//   height: 300px;
+//   width: auto;
+//   overflow: hidden;
+// }
 .all_img {
   height: 300px;
   width: 300px;
@@ -291,4 +300,44 @@ h1 {
 
 .link-under-image {
   margin-top: 20px;
+}
+
+
+// .hamburger-icon {
+//   height: 200px;
+//   width: 220px;
+//   background-image: url('header_menu_hamburger.png');
+//   text-align: left;
+//   background-repeat: no-repeat;
+//
+// }
+@media (max-width: 458px){
+  .page-image-title {
+    font-size: 40px;
+
+  }
+  .all_img {
+    height: 360px;
+    width: 360px;
+    align-items: center;
+    padding: 0;
+  }
+
+  .page-image-title {
+    margin-left: 2px;
+  }
+  .info-nav {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .home-nav {
+    color: #A4A3A6;
+    font-size: 12px;
+
+  }
 }

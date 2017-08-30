@@ -3,8 +3,9 @@
   <hr>
 </div>
 <div class="info-nav">
-  <%= link_to 'Home', root_path%>
-  <%= link_to "Add Image", new_image_path %>
+  <div class="hamburger-icon"></div>
+  <%= link_to 'Home', root_path, :class => "home-nav" %>
+  <%= link_to "Add Image", new_image_path, :class => "home-nav" %>
   <% if @current_user.present? %>
     <%= link_to "Edit profile", edit_user_path(@current_user), :class => "home-nav"%>
     <%= link_to "Sign out #{ @current_user.name }", login_path, :method => 'delete', :class => "home-nav" %>
@@ -22,11 +23,11 @@
 <div class="all_img_container-container">
 <div class="all_img_container">
 <% @images.each do |i|%>
-
+<!-- <div class="square-img"> -->
   <a href="/images/<%= i.id %>">
 <%= image_tag i.image, :class => "all_img"%>
 </a>
-
+<!-- </div> -->
 
 <% end %>
 </div>
