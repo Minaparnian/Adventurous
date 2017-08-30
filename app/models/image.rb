@@ -16,4 +16,7 @@ class Image < ApplicationRecord
   belongs_to :user, :optional => true
   validates :image, :presence => true
   has_many :comments
+  geocoded_by :location
+  after_validation :geocode
+
 end

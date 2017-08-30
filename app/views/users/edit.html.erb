@@ -1,11 +1,20 @@
 <nav>
-    <%= link_to 'Home', images_path %>
+    <%= link_to 'Home', images_path, :class => 'a-black' %>
 </nav>
+<div class="sign-container">
+<div class = "table">
+<div class= "form">
 <h1>Edit user</h1>
 <%= form_for @user do |f| %>
-<%= f.label :email %>
-<%= f.email_field :email %>
-<%= f.submit %>
-
+<%= f.label :email%>
+<fieldset>
+<%= f.email_field :email, :placeholder => 'Email' %>
+</fieldset>
+<fieldset>
+<%= f.submit "Edit", :class => "button" %>
+</fieldset>
 
 <% end %>
+</div><!--form-->
+</div><!--table-->
+</div><!--sign-container-->

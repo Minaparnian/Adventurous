@@ -9,9 +9,10 @@
 
      <div id ="aside">
 <h1 class="comment-name "><%= @image.name %></h1>
-<%= truncate(@image.history, :length => 100 )%>
+<%= truncate(@image.history, :length => 200 )%>
 <%= link_to "Read more", "https://en.wikipedia.org/w/index.php?search=#{@image.name}", :class => "a-black" %>
 <h4>Location:<%= @image.location %></h4>
+<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13250.63834968143!2d151.20441605000002!3d-33.872662850000005!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1504060234977" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
 
