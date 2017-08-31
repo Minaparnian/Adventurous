@@ -149,7 +149,7 @@ a {
 #main {
   display: inline-block;
   width: 75%;
-  background-color: #F6F6F6;
+  background-color:  #192625;
   padding: 5em 0;
 }
 
@@ -192,7 +192,7 @@ a {
 
 .user-name {
   font-weight: bold;
-  color: #FF6F69;
+  color: #5F7E67;
   font-family: Helvetica,Arial,sans-serif;
 }
 
@@ -220,7 +220,7 @@ a {
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
-  height: 700px;
+  height: 930px;
   margin-top: 30px;
   /* Add a top margin to avoid content overlay */
   color: white;
@@ -233,7 +233,7 @@ a {
 
 .page1-title {
   font-family: 'Pacifico', cursive;
-  font-size: 60px;
+  font-size: 80px;
   text-shadow: 0 2px 2px #000;
 }
 
@@ -252,11 +252,12 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 130px;
 }
 
 form {
   display: block;
-  margin-top: 60px;
+  margin-top: 0;
 }
 
 .table {
@@ -348,13 +349,13 @@ iframe {
   font-size: 50px;
   color: #fff;
   text-shadow: 0 2px 2px #000;
-  padding-top: 30px;
+  padding-top: 80px;
   margin: 0;
 }
 
 .slide-1 {
   background-color: #081732;
-  background-image: url('Blue.jpg');
+  // background-image: url('hikers.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -374,7 +375,7 @@ iframe {
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
-  height: 700px;
+  height: 910px;
   margin-top: 30px;
   /* Add a top margin to avoid content overlay */
   color: white;
@@ -386,7 +387,7 @@ iframe {
 }
 
 .scroll-icon {
-  padding-top: 200px;
+  padding-top: 20px;
   height: 100px;
 }
 
@@ -575,7 +576,7 @@ iframe {
   #main {
       display: inline-block;
       width: 100%;
-      background-color: #F6F6F6;
+      background-color: #192625;
       padding: 3em 0;
   }
 
