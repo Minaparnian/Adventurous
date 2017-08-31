@@ -1,35 +1,35 @@
 <nav>
-    <!-- <%= link_to 'Home', images_path, :class => 'a-white' %> -->
-<a href="/images">
-  <img src="/assets/home-icon.png" class="home-icon">
-</a>
+
+  <a href="/images">
+    <img src="/assets/home-icon.png" class="home-icon">
+  </a>
 </nav>
 
 <div class="sign-container">
 
-<h1>Edit user</h1>
-<div class = "table">
+  <h1>Edit user</h1>
+  <div class="table">
 
-<%= form_for @user do |f| %>
-<fieldset>
-<%= f.label :email%>
-<%= f.email_field :email, :placeholder => 'Email' %>
-</fieldset>
+    <%= form_for @user do |f| %>
+    <fieldset>
+      <%= f.label :email%>
+      <%= f.email_field :email, :placeholder => 'Email' %>
+    </fieldset>
 
-<fieldset>
-<%= f.label :password%>
-<%= f.email_field :password, :placeholder => 'Password' %>
-</fieldset>
+    <fieldset>
+      <%= f.label :password%>
+      <%= f.email_field :password, :placeholder => 'Password' %>
+    </fieldset>
 
+    <div class="submit">
+      <label></label>
+      <fieldset>
+        <%= f.submit "Edit", :class => "button" %>
+      </fieldset>
 
+      <% end %>
+    </div>
+    <!--submit-->
 
-<div class="submit">
-<label></label>
-<fieldset>
-<%= f.submit "Edit", :class => "button" %>
-</fieldset>
-
-<% end %>
-</div><!--submit-->
-
-</div><!--sign-container-->
+  </div>
+  <!--sign-container-->

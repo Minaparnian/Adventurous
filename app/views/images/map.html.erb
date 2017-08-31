@@ -1,8 +1,9 @@
 <nav class="nav-sign">
   <a href="/images">
-    <img src="/assets/home-icon.png"  class="home-icon">
+    <img src="/assets/home-icon.png" class="home-icon">
   </a>
 </nav>
 <div class="map">
-<iframe width="80%" height="600px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=<%= @image.latitude %>%2C%20%20<%= @image.longitude %>&key=AIzaSyDKdmEhz-S9eNnURG3ecKE7bA5n5ynhq0c"></iframe>
+  <iframe width="80%" height="600px" frameborder="0"  style="border:0"  src="https://www.google.com/maps/embed/v1/place?q=<%=  @image.latitude %>%2C%20%20<%= @image.longitude  %>&key=AIzaSyDKdmEhz-S9eNnURG3ecKE7bA5n5ynhq0c">
+  </iframe>
 </div>

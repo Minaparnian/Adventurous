@@ -110,7 +110,6 @@ a {
   font-size: 20px;
 }
 
-
 .home1-nav {
   color: #A4A3A6;
 }
@@ -120,8 +119,7 @@ a {
   width: 300px;
   display: inline-block;
   padding: 10px;
-  transition: transform .2s ease-in-out;
-
+  transition: transform 0.2s ease-in-out;
 }
 
 .all_img:hover {
@@ -151,7 +149,7 @@ a {
 #main {
   display: inline-block;
   width: 75%;
-  background-color:  #192625;
+  background-color: #192625;
   padding: 5em 0;
 }
 
@@ -161,7 +159,6 @@ a {
   vertical-align: top;
   padding: 1em;
 }
-
 
 .main_img {
   margin: 0 auto;
@@ -339,12 +336,11 @@ iframe {
   display: none;
 }
 // parallax scrolling/////////////////////////////////
+
 #slide1 {
   height: 443px;
   background-color: #081732;
 }
-
-
 
 .header {
   text-align: center;
@@ -393,7 +389,6 @@ iframe {
   height: 100px;
 }
 
-
 [aos="fade"] {
   opacity: 0;
   transition-property: opacity;
@@ -402,7 +397,6 @@ iframe {
 [aos="fade"].aos-animate {
   opacity: 1;
 }
-
 // @media query//////////////////////////////////////////
 @media (max-width: 458px) {
   .page-image-title {
@@ -485,8 +479,7 @@ iframe {
   .home-nav {
     display: none;
   }
-// hamburger////////////////////////////////////
-
+  // hamburger////////////////////////////////////
 
   #nav-icon1 {
     width: 35px;
@@ -560,18 +553,15 @@ iframe {
 .hiddenMenu {
   display: none;
 }
-
 // @media////////////////////////////
-
-
 @media (max-width: 923px) {
-
   #container {
     max-width: 649px;
     margin: auto;
     background-color: white;
     margin-top: 100px;
-}
+  }
+
   #aside {
     display: inline-block;
     vertical-align: top;
@@ -579,14 +569,12 @@ iframe {
     width: 93%;
   }
 
-
   #main {
-      display: inline-block;
-      width: 100%;
-      background-color: #192625;
-      padding: 3em 0;
+    display: inline-block;
+    width: 100%;
+    background-color: #192625;
+    padding: 3em 0;
   }
-
 
   .comment-container {
     height: 200px;
@@ -594,7 +582,6 @@ iframe {
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     overflow: auto;
     padding: 15px 15px 2px;
-    margin-top: 0;
     margin: 0 auto;
   }
 
@@ -632,7 +619,6 @@ iframe {
   .comment-name {
     display: none;
   }
-
 
   .place-name {
     font-size: 30px;
