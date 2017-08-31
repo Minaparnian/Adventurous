@@ -109,11 +109,7 @@ a {
   color: #A4A3A6;
   font-size: 20px;
 }
-// .square-img {
-//   height: 300px;
-//   width: auto;
-//   overflow: hidden;
-// }
+
 
 .home1-nav {
   color: #A4A3A6;
@@ -124,6 +120,12 @@ a {
   width: 300px;
   display: inline-block;
   padding: 10px;
+  transition: transform .2s ease-in-out;
+
+}
+
+.all_img:hover {
+  transform: scale(1.1);
 }
 
 .all_img_container-container {
@@ -483,6 +485,8 @@ iframe {
   .home-nav {
     display: none;
   }
+// hamburger////////////////////////////////////
+
 
   #nav-icon1 {
     width: 35px;
