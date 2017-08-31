@@ -24,12 +24,13 @@
       <p><%= comment.content %></p><hr/>
       <% end %>
     </div><!--comment-container--><hr/>
-
-    <%= form_for Comment.new do |f| %>
-    <%= f.label :comment, :class => "a-black" %>
-    <%= f.text_area :content %>
-    <%= hidden_field_tag :image_id, @image.id %>
-    <%= f.submit 'create Comment', :class => 'create-button-comment'%>
+    <div class="comment-div">
+      <%= form_for Comment.new do |f| %>
+      <%= f.label :comment, :class => "a-black" %>
+      <%= f.text_area :content %>
+      <%= hidden_field_tag :image_id, @image.id %>
+      <%= f.submit 'create Comment', :class => 'create-button-comment'%>
+    </div>
     <% end %>
 
   </div>

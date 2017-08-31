@@ -562,7 +562,7 @@ iframe {
 
   .comment-container {
     height: 200px;
-    width: 500px;
+    width: 90%;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     overflow: auto;
     padding: 15px 15px 2px;
@@ -580,5 +580,18 @@ iframe {
     display: block;
     width: 100%;
     margin-top: 0;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .comment-div {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .a-grey {
+    font-size: 17px;
   }
 }
