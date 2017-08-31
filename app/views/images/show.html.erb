@@ -1,38 +1,38 @@
+<div id="container">
+  <div id="main">
+    <h1><%= link_to @image.name,
+     map_path(@image), :class => "comment-name " %></h1>
+    <%= link_to image_tag(@image.image, :class => 'main_img'), images_path %>
+    <div class="a-under-image">
+      <%= link_to "Delete", image_path, :method => 'delete', :class => 'a-grey' %>
+      <%= link_to "Edit", edit_image_path, :class => 'a-grey' %>
+    </div>
+    <!--a-under-image-->
+  </div>
+  <!--main-->
 
-<div id ="container">
-  <div id = "main">
-<%= link_to image_tag(@image.image, :class => 'main_img'), images_path %>
-<div class="a-under-image">
-<%= link_to "Delete", image_path, :method => 'delete', :class => 'a-grey' %>
-<%= link_to "Edit", edit_image_path, :class => 'a-grey' %>
-</div><!--a-under-image-->
-  </div><!--main-->
+  <div id="aside">
+    <h1><%= link_to @image.name,
+ map_path(@image), :class => "comment-name " %></h1>
+    <%= truncate(@image.history, :length => 200 )%>
+    <%= link_to "Read more", "https://en.wikipedia.org/w/index.php?search=#{@image.name}", :class => "a-grey-comment" %><hr/>
+    <h4 class="a-grey-comment">Find location<%= link_to @image.location, map_path(@image), :class => "a-black" %></h4><hr/>
 
+    <div class="comment-container">
+      <% @image.comments.each do |comment|%>
+      <p class="user-name"><%= comment.user.name %></p>
+      <p><%= comment.content %></p><hr/>
+      <% end %>
+    </div><!--comment-container--><hr/>
 
-     <div id ="aside">
-<h1 class="comment-name "><%= @image.name %></h1>
-<%= truncate(@image.history, :length => 200 )%><br />
-<%= link_to "Read more", "https://en.wikipedia.org/w/index.php?search=#{@image.name}", :class => "a-pink" %>
-<h4 class = "a-pink">Find location<%= link_to @image.location, map_path(@image), :class => "a-black" %></h4>
+    <%= form_for Comment.new do |f| %>
+    <%= f.label :comment, :class => "a-black" %>
+    <%= f.text_area :content %>
+    <%= hidden_field_tag :image_id, @image.id %>
+    <%= f.submit 'create Comment', :class => 'create-button-comment'%>
+    <% end %>
 
-
-
-
-   <pre class="comment-container">
-     <% @image.comments.each do |comment|%>
-     <p class="user-name"><%= comment.user.name %></p>
-     <p><%= comment.content %></p>
-     <% end %>
-   </pre><!--comment-container-->
-
-     <%= form_for Comment.new do |f| %>
-     <%= f.label :comment, :class => "a-black" %>
-     <%= f.text_area :content %>
-     <%= hidden_field_tag :image_id, @image.id %>
-     <%= f.submit 'create Comment', :class => 'create-button-comment'%>
-     <% end %>
-
-
-
-</div><!--container-->
-</div><!--aside-->
+  </div>
+  <!--container-->
+</div>
+<!--aside-->
