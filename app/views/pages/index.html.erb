@@ -1,12 +1,13 @@
 <div class="nav">
 
-<%= link_to 'Sign up', new_user_path, :class => "" %>
+
 <% if @current_user.present? %>
 
 <%= link_to " #{ @current_user.name } Profile", images_path, :class => "home1-nav" %>
 <% else %>
 
   <%= link_to 'Sign in', login_path, :class => "home1-sign-in"%>
+  <%= link_to 'Sign up', new_user_path, :class => "" <%></%>
 <% end %>
 
 </div>
@@ -22,7 +23,7 @@
 
 <div id="slide1" class="slide">
   <div class="slide-1">
-      <h1 class="header">Welcome to Adventurous world wide app...</h1>
+      <h1 class="header">Welcome to the Adventurous world wide app...</h1>
 
     <p class="text">Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
   </div>
