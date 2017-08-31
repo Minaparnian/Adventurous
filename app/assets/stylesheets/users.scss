@@ -160,6 +160,7 @@ a {
   padding: 1em;
 }
 
+
 .main_img {
   margin: 0 auto;
   display: block;
@@ -183,6 +184,10 @@ a {
   font-size: 30px;
   color: black;
   padding: 0;
+}
+
+.place-name {
+  display: none;
 }
 
 .user-name {
@@ -336,17 +341,20 @@ iframe {
   background-color: #081732;
 }
 
+
+
 .header {
   text-align: center;
   font-size: 50px;
   color: #fff;
   text-shadow: 0 2px 2px #000;
   padding-top: 30px;
+  margin: 0;
 }
 
 .slide-1 {
   background-color: #081732;
-  background-image: url('Park.jpg');
+  background-image: url('Blue.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -381,6 +389,17 @@ iframe {
   padding-top: 200px;
   height: 100px;
 }
+
+
+[aos="fade"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[aos="fade"].aos-animate {
+  opacity: 1;
+}
+
 // @media query//////////////////////////////////////////
 @media (max-width: 458px) {
   .page-image-title {
@@ -560,6 +579,7 @@ iframe {
       padding: 3em 0;
   }
 
+
   .comment-container {
     height: 200px;
     width: 90%;
@@ -584,14 +604,31 @@ iframe {
 
   h1 {
     text-align: center;
+    color: black;
+  }
+
+  .place-name {
+    display: inline;
   }
 
   .comment-div {
-    width: 50%;
+    width: 30%;
     margin: 0 auto;
+    text-align: center;
   }
 
   .a-grey {
     font-size: 17px;
+  }
+
+  .comment-name {
+    display: none;
+  }
+
+
+  .place-name {
+    font-size: 30px;
+    color: black;
+    padding: 0;
   }
 }

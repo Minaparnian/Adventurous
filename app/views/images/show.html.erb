@@ -1,7 +1,7 @@
 <div id="container">
   <div id="main">
     <h1><%= link_to @image.name,
-     map_path(@image), :class => "comment-name " %></h1>
+     map_path(@image), :class => "place-name" %></h1>
     <%= link_to image_tag(@image.image, :class => 'main_img'), images_path %>
     <div class="a-under-image">
       <%= link_to "Delete", image_path, :method => 'delete', :class => 'a-grey' %>
@@ -13,7 +13,7 @@
 
   <div id="aside">
     <h1><%= link_to @image.name,
- map_path(@image), :class => "comment-name " %></h1>
+ map_path(@image), :class => "comment-name" %></h1>
     <%= truncate(@image.history, :length => 200 )%>
     <%= link_to "Read more", "https://en.wikipedia.org/w/index.php?search=#{@image.name}", :class => "a-grey-comment" %><hr/>
     <h4 class="a-grey-comment">Find location<%= link_to @image.location, map_path(@image), :class => "a-black" %></h4><hr/>

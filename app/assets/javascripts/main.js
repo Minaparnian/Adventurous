@@ -3,3 +3,7 @@ $(document).ready(function(){
         $(this).toggleClass('open');
     });
 });
+
+document.querySelector('.scroll-icon').scrollIntoView({
+  behavior: 'smooth'
+});
