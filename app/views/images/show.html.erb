@@ -1,3 +1,10 @@
+<nav>
+
+    <a href="/images">
+       <img src="/assets/icon-close.png" class="home-icon">
+    </a>
+</nav>
+
 <div id="container">
   <div id="main">
     <h1><%= link_to @image.name,
@@ -6,10 +13,10 @@
     <div class="a-under-image">
       <%= link_to "Delete", image_path, :method => 'delete', :class => 'a-grey' %>
       <%= link_to "Edit", edit_image_path, :class => 'a-grey' %>
-    </div>
-    <!--a-under-image-->
-  </div>
-  <!--main-->
+    </div><!--a-under-image-->
+
+  </div><!--main-->
+
 
   <div id="aside">
     <h1><%= link_to @image.name,
@@ -19,10 +26,12 @@
     <h4 class="a-grey-comment">Find location<%= link_to @image.location, map_path(@image), :class => "a-black" %></h4><hr/>
 
     <div class="comment-container">
+      <div class="border">
       <% @image.comments.each do |comment|%>
       <p class="user-name"><%= comment.user.name %></p>
       <p><%= comment.content %></p><hr/>
       <% end %>
+    </div><!--border-->
     </div><!--comment-container--><hr/>
     <div class="comment-div">
       <%= form_for Comment.new do |f| %>

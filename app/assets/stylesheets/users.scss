@@ -1,5 +1,13 @@
+// google phont links///////////////////////////
+
 @import url( 'https://fonts.googleapis.com/css?family=Lobster|Shrikhand');
 @import url( 'https://fonts.googleapis.com/css?family=Pacifico');
+
+
+
+
+
+// Body feuture///////////////////////////////////
 
 body {
   font-family: Helvetica,Arial,sans-serif;
@@ -59,44 +67,171 @@ body.users-new {
   background-color: #464646;
 }
 
-p {
-  font-family: Helvetica,Arial,sans-serif;
-  word-wrap: normal;
+
+
+
+
+
+// Home page(page-1)/////////////////////////////////////
+
+.home1-nav {
+  color: #A4A3A6;
 }
 
-.home-icon {
-  width: 50px;
-  position: fixed;
-}
-
-a {
-  text-decoration: none;
+.main-home1 {
+  background-image: url('background.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  height: 930px;
+  margin-top: 30px;
+  /* Add a top margin to avoid content overlay */
   color: white;
-  padding: 20px;
-  font-size: 17px;
+  // flex box to center the content
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.a-black {
-  color: black;
-  font-size: 15px;
+.page1-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 80px;
+  text-shadow: 0 2px 2px #000;
 }
 
-.a-grey-comment {
-  color: #7b7b7b;
+.page1-subtitle {
+  margin-top: -40px;
+}
+
+
+.scroll-icon {
+  padding-top: 20px;
+  height: 100px;
+}
+
+// Home page (page-1-parallax scrolling)//////
+
+#slide1 {
+  height: 443px;
+  background-color: #081732;
+}
+
+.header {
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+  padding-top: 80px;
+  margin: 0;
+}
+
+.slide-1 {
+  background-color: #081732;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.text {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  padding: 70px;
+}
+
+.main-home1-1 {
+  background-image: url('yeyeye.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  height: 910px;
+  margin-top: 30px;
+  /* Add a top margin to avoid content overlay */
+  color: white;
+  // flex box to center the content
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+// Sign up & sign in page/////////////////////////
+
+.sign-container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 525px;
+  min-height: 670px;
+  position: relative;
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+}
+
+form {
+  display: block;
+  margin-top: 0;
+}
+
+.table {
+  margin: 0 auto;
+  width: 374px;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  text-align: left;
   font-size: 16px;
-  padding-left: 0;
-  font-weight: normal;
+  min-height: 50px;
+  min-width: 350px;
 }
 
-.a-under-image {
-  padding-top: 30px;
+.button {
+  font-size: 16px;
+  background-color: #004E80;
+  color: #000;
+  border: 5px solid #004E80;
+  border-radius: 10px;
+  min-width: 353px;
+  color: white;
+  text-align: center;
 }
 
-.a-grey {
-  color: #7b7b7b;
+label {
+  color: white;
   font-size: 20px;
+  margin-bottom: 20px;
 }
 
+
+
+
+
+
+// Profile page /////////////////////////////////////
 .info-nav {
   height: 50px;
   width: 100%;
@@ -110,9 +245,7 @@ a {
   font-size: 20px;
 }
 
-.home1-nav {
-  color: #A4A3A6;
-}
+
 
 .all_img {
   height: 300px;
@@ -137,6 +270,64 @@ a {
   display: table;
   padding-top: 80px;
 }
+
+.page-image-title {
+  color: #A4A3A6;
+  font-family: 'Pacifico', cursive;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 0 2px 2px #000;
+  margin-top: 5px;
+}
+
+
+.div-back-title {
+  height: 150px;
+  width: 100%;
+}
+
+
+// for @media
+.hiddenMenu {
+  display: none;
+}
+
+// for @media
+.nav-icon1 {
+  height: 50px;
+  width: 50px;
+  display: none;
+}
+
+
+
+
+
+
+
+// show image page //////////////////////////////////////////
+
+.a-black {
+  color: black;
+  font-size: 15px;
+}
+
+.a-grey-comment {
+  color: #7b7b7b;
+  font-size: 16px;
+  padding-left: 0;
+  font-weight: normal;
+}
+
+.a-under-image {
+  padding-top: 30px;
+}
+
+.a-grey {
+  color: #7b7b7b;
+  font-size: 20px;
+}
+
 
 #container {
   max-width: 960px;
@@ -195,6 +386,34 @@ a {
   font-family: Helvetica,Arial,sans-serif;
 }
 
+
+.border {
+  border: 1px solid lightgrey;
+  padding: 12px;
+}
+
+
+// Mice///////////////////////////////////////////////
+
+p {
+  font-family: Helvetica,Arial,sans-serif;
+  word-wrap: normal;
+}
+
+.home-icon {
+  width: 50px;
+  position: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 17px;
+}
+
+
+
 .nav {
   overflow: hidden;
   background-color: #081732;
@@ -212,111 +431,19 @@ a {
   padding-left: 20px;
 }
 
-.main-home1 {
-  background-image: url('background.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-  height: 930px;
-  margin-top: 30px;
-  /* Add a top margin to avoid content overlay */
-  color: white;
-  // flex box to center the content
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-.page1-title {
-  font-family: 'Pacifico', cursive;
-  font-size: 80px;
-  text-shadow: 0 2px 2px #000;
-}
-
-.page1-subtitle {
-  margin-top: -40px;
-}
-
-.sign-container {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 525px;
-  min-height: 670px;
-  position: relative;
-  box-shadow: 0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 130px;
-}
-
-form {
-  display: block;
-  margin-top: 0;
-}
-
-.table {
-  margin: 0 auto;
-  width: 374px;
-}
-
-fieldset {
-  border: none;
-  margin-bottom: 10px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-input {
-  text-align: left;
-  font-size: 16px;
-  min-height: 50px;
-  min-width: 350px;
-}
-
-.button {
-  font-size: 16px;
-  background-color: #004E80;
-  color: #000;
-  border: 5px solid #004E80;
-  border-radius: 10px;
-  min-width: 353px;
-  color: white;
-  text-align: center;
-}
-
-label {
-  color: white;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
 
 h1 {
   color: white;
 }
 
-.page-image-title {
-  color: #A4A3A6;
-  font-family: 'Pacifico', cursive;
-  font-size: 60px;
-  text-align: center;
-  text-shadow: 0 2px 2px #000;
-  margin-top: 5px;
-}
 
-.cover-photo {
-  height: 150px;
-  width: 100%;
-}
 
-.link-under-image {
-  margin-top: 20px;
-}
+
+
+// .link-under-image {
+//   margin-top: 20px;
+// }
 
 .map {
   display: flex;
@@ -330,73 +457,13 @@ iframe {
   flex-direction: column;
 }
 
-.nav-icon1 {
-  height: 50px;
-  width: 50px;
-  display: none;
-}
-// parallax scrolling/////////////////////////////////
 
-#slide1 {
-  height: 443px;
-  background-color: #081732;
-}
 
-.header {
-  text-align: center;
-  font-size: 50px;
-  color: #fff;
-  text-shadow: 0 2px 2px #000;
-  padding-top: 80px;
-  margin: 0;
-}
 
-.slide-1 {
-  background-color: #081732;
-  // background-image: url('hikers.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-}
 
-.text {
-  text-align: center;
-  font-size: 30px;
-  color: white;
-  padding: 70px;
-}
 
-.main-home1-1 {
-  background-image: url('yeyeye.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-  height: 910px;
-  margin-top: 30px;
-  /* Add a top margin to avoid content overlay */
-  color: white;
-  // flex box to center the content
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-.scroll-icon {
-  padding-top: 20px;
-  height: 100px;
-}
 
-[aos="fade"] {
-  opacity: 0;
-  transition-property: opacity;
-}
-
-[aos="fade"].aos-animate {
-  opacity: 1;
-}
 // @media query//////////////////////////////////////////
 @media (max-width: 458px) {
   .page-image-title {
@@ -479,7 +546,8 @@ iframe {
   .home-nav {
     display: none;
   }
-  // hamburger////////////////////////////////////
+
+  // hamburger icon under @ media////////////////////////////////////
 
   #nav-icon1 {
     width: 35px;
@@ -548,11 +616,9 @@ iframe {
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
   }
+
 }
 
-.hiddenMenu {
-  display: none;
-}
 // @media////////////////////////////
 @media (max-width: 923px) {
   #container {

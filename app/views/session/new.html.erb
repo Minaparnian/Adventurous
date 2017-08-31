@@ -1,16 +1,16 @@
 <nav class="nav-sign">
-  <!-- <%= link_to 'Home', images_path %> -->
+
 
   <% if @current_user.present? %>
     <%= link_to "Edit profile", edit_user_path(@current_user) %>
     <%= link_to "Sign out #{ @current_user.name }", login_path, :method => 'delete' %>
   <% else %>
-    <%= link_to 'Sign up', new_user_path, :class => "btn btn-default btn-lg" %>
-    <!-- <%= link_to 'Sign in', login_path %> -->
+    <%= link_to 'Sign up', new_user_path%>
+
   <% end %>
 </nav>
 <div class="sign-container">
-<!-- <h1 class="adven-title">Adventurous</h1> -->
+
 
 <div class = "table">
 <% if flash[:error].present? %>
