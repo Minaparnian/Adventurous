@@ -268,7 +268,7 @@ label {
   margin-left: auto;
   margin-right: auto;
   display: table;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 .page-image-title {
@@ -292,6 +292,9 @@ label {
   display: none;
 }
 
+.ham-icon {
+  display: none;
+}
 // for @media
 .nav-icon1 {
   height: 50px;
@@ -392,6 +395,9 @@ label {
   padding: 12px;
 }
 
+.textfield {
+  min-width: 30px;
+}
 
 // Mice///////////////////////////////////////////////
 
@@ -403,6 +409,7 @@ p {
 .home-icon {
   width: 50px;
   position: fixed;
+  z-index: -1;
 }
 
 a {
@@ -547,6 +554,8 @@ iframe {
     display: none;
   }
 
+
+
   // hamburger icon under @ media////////////////////////////////////
 
   #nav-icon1 {
@@ -617,7 +626,30 @@ iframe {
     transform: rotate(-135deg);
   }
 
+
+
+
+.ham-icon {
+  border: 1px solid #A4A3A6;
+  color: #A4A3A6;
+  padding: 4px;
+  display: inline;
+
+
 }
+
+.hiddenMenu {
+  margin-right: 37px;
+  margin-top: 120px;
+
+
+}
+}
+
+
+
+
+
 
 // @media////////////////////////////
 @media (max-width: 923px) {
