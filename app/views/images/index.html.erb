@@ -1,5 +1,7 @@
 <div class="cover-photo">
-  <a href="/"><h1 class="page-image-title">Adventurous</h1></a>
+  <a href="/">
+    <h1 class="page-image-title">Adventurous</h1>
+  </a>
   <hr>
 </div>
 <div class="info-nav">
@@ -7,16 +9,21 @@
     <img src="/assets/hamburger.png"  class="hamburger-icon">
   </a> -->
   <div id="nav-icon1">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="hiddenMenu">
+    <ul>
+      <li>Home</li>
+    </ul>
+  </div>
 
   <%= link_to 'Home', root_path, :class => "home-nav" %>
   <%= link_to "Add Image", new_image_path, :class => "home-nav" %>
   <!-- <% if @current_user.present? %> -->
-    <%= link_to "Edit profile", edit_user_path(@current_user), :class => "home-nav"%>
-    <%= link_to "Sign out #{ @current_user.name }", login_path, :method => 'delete', :class => "home-nav" %>
+  <%= link_to "Edit profile", edit_user_path(@current_user), :class => "home-nav"%>
+  <%= link_to "Sign out #{ @current_user.name }", login_path, :method => 'delete', :class => "home-nav" %>
   <!-- <% else %>
     <%= link_to 'Sign up', root_path %>
 
@@ -25,18 +32,16 @@
 </div>
 <div class="round"></div>
 
-
-
 <div class="all_img_container-container">
-<div class="all_img_container">
+  <div class="all_img_container">
 
-<% @images.each do |i|%>
-<!-- <div class="square-img"> -->
-  <a href="/images/<%= i.id %>">
-<%= image_tag i.image, :class => "all_img"%>
-</a>
-<!-- </div> -->
+    <% @images.each do |i|%>
+    <!-- <div class="square-img"> -->
+    <a href="/images/<%= i.id %>">
+      <%= image_tag i.image, :class => "all_img"%>
+    </a>
+    <!-- </div> -->
 
-<% end %>
-</div>
+    <% end %>
+  </div>
 </div>
