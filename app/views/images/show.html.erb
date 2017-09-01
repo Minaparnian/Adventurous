@@ -1,8 +1,8 @@
 <nav>
 
-    <a href="/images">
-       <img src="/assets/icon-close.png" class="home-icon">
-    </a>
+  <a href="/images">
+    <img src="/assets/icon-close.png" class="home-icon">
+  </a>
 </nav>
 
 <div id="container">
@@ -11,12 +11,13 @@
      map_path(@image), :class => "place-name" %></h1>
     <%= link_to image_tag(@image.image, :class => 'main_img'), images_path %>
     <div class="a-under-image">
-      <%= link_to "Delete", image_path, :method => 'delete', :class => 'a-grey' %>
+      <%= link_to "Delete", image_path, :method => 'delete', :class => 'a-grey'  %>
       <%= link_to "Edit", edit_image_path, :class => 'a-grey' %>
-    </div><!--a-under-image-->
+    </div>
+    <!--a-under-image-->
 
-  </div><!--main-->
-
+  </div>
+  <!--main-->
 
   <div id="aside">
     <h1><%= link_to @image.name,
@@ -27,14 +28,29 @@
 
     <div class="comment-container">
       <div class="border">
-      <% @image.comments.each do |comment|%>
-      <p class="user-name"><%= comment.user.name %></p>
-      <p><%= comment.content %></p><hr/>
-      <%= link_to "Delete", comment_path(comment), :method => 'delete', :class => 'a-black' %>
-      <%= link_to "Edit", comment_path(comment), :class => 'a-black' %>
-      <% end %>
-    </div><!--border-->
+        <% @image.comments.each do |comment|%>
+          <p class="user-name"><%= comment.user.name %></p>
+          <p><%= comment.content %></p><hr/>
+          <%= link_to "Delete", comment_path(comment), :method => 'delete', :class => 'a-black' if comment.user_id == @current_user.id%>
+          <%= link_to "Edit", '#', :class => 'a-black show_edit_comment' if comment.user_id == @current_user.id %>
+
+        <!-- this part is for edit comment -->
+
+         <% if comment.user.id == @current_user.id %>
+
+          <%= form_for comment do |f| %>
+            <div class="edit-comment-id">
+              <%= f.text_field :content, :class => 'textfield'%>
+            </div>
+            <%= f.submit 'Edit Comment', :class => 'create-button-comment'%>
+          <% end %>
+        <% end %>
+       <% end %>
+
+      </div><!--border-->
     </div><!--comment-container--><hr/>
+
+
     <div class="comment-div">
       <%= form_for Comment.new do |f| %>
       <%= f.label :comment, :class => "a-black" %>

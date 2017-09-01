@@ -14,23 +14,9 @@ class CommentsController < ApplicationController
   def update
     comment = Comment.find params[:id]
     comment.update comment_params
-    redirect_to new_comment_path
+    redirect_to comment.image
 
   end
-
-
-  # def update
-  #   @comment = Comment.find params[:id]
-  #   @comment.update comment_params
-  #   redirect_to image_path(@comment.image_id)
-  # end
-  #
-  #
-  #
-  # def edit
-  #   @comment = Comment.find params[:id]
-  # end
-
 
 
     def destroy
