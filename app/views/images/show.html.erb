@@ -30,7 +30,8 @@
       <% @image.comments.each do |comment|%>
       <p class="user-name"><%= comment.user.name %></p>
       <p><%= comment.content %></p><hr/>
-      <!-- <%= link_to "Delete", new_comment_path, :method => 'delete', :class => '' %> -->
+      <%= link_to "Delete", comment_path(comment), :method => 'delete', :class => 'a-black' %>
+      <%= link_to "Edit", comment_path(comment), :class => 'a-black' %>
       <% end %>
     </div><!--border-->
     </div><!--comment-container--><hr/>
