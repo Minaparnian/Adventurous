@@ -25,7 +25,7 @@
   <%= link_to "Sign out #{ @current_user.name }", login_path, :method => 'delete', :class => "home-nav" %>
 
 </div>
-<div class="round"></div>
+
 
 <div class="all_img_container-container">
   <div class="all_img_container">
@@ -33,7 +33,8 @@
     <% @images.each do |i|%>
 
     <a href="/images/<%= i.id %>">
-      <%= image_tag i.image, :class => "all_img"%>
+
+      <%= cl_image_tag i.image, :class => " all_img", :width=>300, :height=>300, :crop=>"fill"%>
     </a>
 
     <% end %>
