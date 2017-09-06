@@ -2,7 +2,7 @@
 
 # Adventurous
 ###### By Mina Parnian
-[adventurous link](https://dry-mesa-99000.herokuapp.com/)
+[App link](https://dry-mesa-99000.herokuapp.com/)
 
 ## Introduction
 
