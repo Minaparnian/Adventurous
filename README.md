@@ -55,4 +55,4 @@ Steps for making the brain and connecting it to bones and skin : -->
 
 * [Heroku](https://www.heroku.com/customers)
 
-Thanks for stopping by, and I hope you enjoy the game!
+Thanks for stopping by, and I hope you enjoy the app!
