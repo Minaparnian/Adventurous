@@ -124,6 +124,10 @@ html, body {
   text-align: center;
 }
 
+.h1-paralax-hide{
+  display: none;
+}
+
 .h3-paralax{
   color:#fff;
   width:100%;
@@ -202,19 +206,19 @@ section {
   } /* &:nth-of-type(1) */
 
        &:nth-of-type(2){
-          background-image:url('http://wallpaperhey.com/Images/nature-image-for-iphone-Free-High-Resolution-Images.jpg');
-  }
+          background-image:url('nature-Images.jpg');
+        }
 
        &:nth-of-type(3){
-          background-image:url('https://www.nature.org/cs/groups/webcontent/@web/documents/media/2016-photocontest-yosemite-w-1.jpg');
-  }
+          background-image:url('photocontest.jpg');
+        }
 
        &:nth-of-type(4){
           background-image:url('lady-climbing.jpg');
-  }
+        }
        &:nth-of-type(5){
           background-image:url('yeyeye.jpg');
-  }
+        }
 }
 
 
@@ -848,7 +852,7 @@ iframe {
   }
 }
 
-
+// @media////////////////////////////
 @media (max-width: 720px) {
 
   .text {
@@ -857,4 +861,160 @@ iframe {
     color: white;
     padding: 70px;
   }
+}
+
+
+// @media////////////////////////////
+@media (max-width: 839px) {
+
+  .home1-nav {
+    color: #A4A3A6;
+    position: fixed;
+  }
+
+
+  @mixin backgrounds(){
+    background-attachment: fixed;
+    background-size: cover!important;
+    background-position: center;
+    background-blend-mode: screen;
+
+  }
+
+  html, body {
+    margin:0; height:100%;
+    font-family: Helvetica,Arial,sans-serif;
+
+  }
+
+  .h1-paralax{
+    top:50%;
+    left:50%;
+    font-size:50px;
+    color:#fff;
+    width:100%;
+    text-align:left;
+    font-family: 'raisonne', sans-serif;
+    text-shadow: 0 2px 2px #000;
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .h1-paralax-last {
+    top:50%;
+    left:50%;
+    font-size:50px;
+    color:#fff;
+    width:100%;
+    text-align:left;
+    font-family: 'raisonne', sans-serif;
+    text-shadow: 0 2px 2px #000;
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+
+  }
+
+  .h1-paralax-hide {
+    display:block;
+    color: red;
+    top: 50%;
+    left: 32%;
+
+  }
+
+  .h3-paralax{
+    color:#fff;
+    width:100%;
+    text-align:left;
+    font-size: 15px;
+  }
+
+  .paralx-content-container {
+    width: 60%;
+    height: 300px;
+    z-index: 1000000;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+  }
+
+
+   .p-paralax {
+     font-family: Helvetica,Arial,sans-serif;
+     position:absolute;
+     top:70%;
+     left:50%;
+     transform:translate(-50%,-50%);
+     word-wrap: normal;
+     color: #fff;
+     width:100%;
+     text-align:left;
+     font-size: 30px;
+
+   }
+
+  div.vertical-line {
+    width: 80px;
+    height: 120px;
+    border-right: 1px solid red;
+    position: absolute;
+    top: 680px;
+  }
+
+  h5{
+    color: red;
+  }
+
+  #h-header-scroll-txt {
+        transform: translate3d(0px, 0%, 0px);
+        float: left;
+        width: 16px;
+        height: 156px;
+        padding-left: 50px;
+        color: white;
+  }
+
+  section {
+    position: relative;
+    height: 100%;
+    margin-top: 0;
+    @include backgrounds();
+
+
+
+      &:nth-of-type(1){
+        .parallax-1 {
+          height:122vh;
+          width:100%;
+          position:relative;
+          overflow: hidden;
+          .new-parallax{
+            z-index:-100000;
+            @include backgrounds();
+            height:100%;
+            width:100%;
+            position:relative;
+            background-image:url('Mount_Everest-mountains-adventure1.jpg');
+
+   } /* .new-parallax */
+      } /* .parallax-1 */
+    } /* &:nth-of-type(1) */
+
+         &:nth-of-type(2){
+            background-image:url('nature-Images.jpg');
+    }
+
+         &:nth-of-type(3){
+            background-image:url('photocontest.jpg');
+    }
+
+         &:nth-of-type(4){
+            background-image:url('lady-climbing.jpg');
+    }
+         &:nth-of-type(5){
+            background-image:url('yeyeye.jpg');
+    }
+
+}
 }
