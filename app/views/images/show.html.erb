@@ -28,7 +28,7 @@
 
     <div class="comment-container">
       <div class="border">
-        <% @image.comments.reverse.each do |comment|%>
+        <% @image.comments.order('created_at desc').each do |comment|%>
           <p class="user-name"><%= comment.user.name %></p>
           <p><%= comment.content %></p><hr/>
           <%= link_to "Delete", comment_path(comment), :method => 'delete', :class => 'a-black' if comment.user_id == @current_user.id%>
@@ -42,7 +42,7 @@
             <div class="edit-comment-id">
               <%= f.text_field :content, :class => 'textfield'%>
             </div>
-            <%= f.submit 'Edit Comment', :class => 'create-button-comment'%>
+            <%= f.submit 'Edit Comment', :class => 'create-button-comment-inside'%>
           <% end %>
         <% end %>
        <% end %>

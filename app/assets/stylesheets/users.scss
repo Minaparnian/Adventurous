@@ -8,15 +8,13 @@
 
 
 // Body feuture///////////////////////////////////
-
+//
 body {
   font-family: Helvetica,Arial,sans-serif;
+  background-color: #081732;
 }
 
-body.pages-index {
-  margin: 0;
-  padding: 0;
-}
+
 
 body.images-new {
   background-image: url('hero.jpg');
@@ -67,8 +65,13 @@ body.users-new {
   background-color: #464646;
 }
 
+body.images-index {
+  background-color: white;
+}
 
-
+.nav-sign {
+  padding-top: 20px;
+}
 
 
 
@@ -76,93 +79,143 @@ body.users-new {
 
 .home1-nav {
   color: #A4A3A6;
+  position: fixed;
 }
 
-.main-home1 {
-  background-image: url('background.png');
-  background-position: center center;
-  background-repeat: no-repeat;
+
+
+
+@mixin backgrounds(){
   background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-  height: 930px;
-  margin-top: 30px;
-  /* Add a top margin to avoid content overlay */
-  color: white;
-  // flex box to center the content
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-size: cover!important;
+  background-position: center;
+  background-blend-mode: screen;
+
 }
 
-.page1-title {
-  font-family: 'Pacifico', cursive;
-  font-size: 80px;
+html, body {
+  margin:0; height:100%;
+  font-family: Helvetica,Arial,sans-serif;
+
+}
+
+.h1-paralax{
+  top:50%;
+  left:50%;
+  font-size:50px;
+  color:#fff;
+  width:100%;
+  text-align:left;
+  font-family: 'raisonne', sans-serif;
   text-shadow: 0 2px 2px #000;
-  color: white;
-}
-
-.page1-subtitle {
-  margin-top: -40px;
-}
-
-
-.scroll-icon {
-  padding-top: 20px;
-  height: 100px;
-}
-
-// Home page (page-1-parallax scrolling)//////
-
-#slide1 {
-  height: 443px;
-  background-color: #081732;
-}
-
-.header {
-  text-align: center;
-  font-size: 50px;
-  color: #fff;
-  text-shadow: 0 2px 2px #000;
-  padding-top: 80px;
   margin: 0;
 }
 
-.slide-1 {
-  background-color: #081732;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-}
-
-.text {
+.h1-paralax-last {
+  top:50%;
+  left:50%;
+  font-size:50px;
+  color:#fff;
+  width:100%;
+  text-align:left;
+  font-family: 'raisonne', sans-serif;
+  text-shadow: 0 2px 2px #000;
+  margin: 0;
   text-align: center;
-  font-size: 30px;
-  color: white;
-  padding: 70px;
 }
 
-.main-home1-1 {
-  background-image: url('yeyeye.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-  height: 910px;
-  margin-top: 30px;
-  /* Add a top margin to avoid content overlay */
-  color: white;
-  // flex box to center the content
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.h3-paralax{
+  color:#fff;
+  width:100%;
+  text-align:left;
+}
+
+.paralx-content-container {
+  width: 460px;
+  height: 300px;
+  z-index: 1000000;
+  position: absolute;
+  top: 50%;
+  left: 32%;
 }
 
 
+ .p-paralax {
+   font-family: Helvetica,Arial,sans-serif;
+   position:absolute;
+   top:70%;
+   left:50%;
+   transform:translate(-50%,-50%);
+   word-wrap: normal;
+   color: #fff;
+   width:100%;
+   text-align:left;
+   font-size: 30px;
 
+ }
+
+div.vertical-line {
+  width: 80px;
+  height: 120px;
+  border-right: 1px solid red;
+  position: absolute;
+  top: 680px;
+}
+
+h5{
+  color: red;
+}
+
+#h-header-scroll-txt {
+      transform: translate3d(0px, 0%, 0px);
+      float: left;
+      width: 16px;
+      height: 156px;
+      padding-left: 50px;
+      color: white;
+}
+
+section {
+  position: relative;
+  height: 100%;
+  margin-top: 0;
+  @include backgrounds();
+
+
+
+    &:nth-of-type(1){
+      .parallax-1 {
+        height:122vh;
+        width:100%;
+        position:relative;
+        overflow: hidden;
+        .new-parallax{
+          z-index:-100000;
+          @include backgrounds();
+          height:100%;
+          width:100%;
+          position:relative;
+          background-image:url('mountains-adventure.jpg');
+
+ } /* .new-parallax */
+    } /* .parallax-1 */
+  } /* &:nth-of-type(1) */
+
+       &:nth-of-type(2){
+          background-image:url('http://wallpaperhey.com/Images/nature-image-for-iphone-Free-High-Resolution-Images.jpg');
+  }
+
+       &:nth-of-type(3){
+          background-image:url('https://www.nature.org/cs/groups/webcontent/@web/documents/media/2016-photocontest-yosemite-w-1.jpg');
+  }
+
+       &:nth-of-type(4){
+          background-image:url('lady-climbing.jpg');
+  }
+       &:nth-of-type(5){
+          background-image:url('yeyeye.jpg');
+  }
+}
 
 
 
@@ -372,9 +425,18 @@ label {
 }
 
 .create-button-comment {
-  width: 120px;
-  padding-top: 10px;
+  min-width: 178px;
+  min-height: 20px;
+  margin-top: 10px;
+  color: black;
 }
+
+.create-button-comment-inside{
+  min-width: 130px;
+  min-height: 20px;
+  color: white;
+}
+
 
 .comment-name {
   font-size: 30px;
@@ -405,6 +467,7 @@ label {
 .delete-icon {
   height: 50px;
   width: 50px;
+  cursor: pointer;
 }
 
 .edit_comment {
@@ -424,9 +487,9 @@ p {
 }
 
 .home-icon {
-  width: 50px;
+  width: 30px;
   position: fixed;
-  z-index: -1;
+  padding-top: 20px;
 }
 
 a {
@@ -434,6 +497,7 @@ a {
   color: white;
   padding: 20px;
   font-size: 17px;
+  cursor: pointer;
 }
 
 
@@ -453,6 +517,7 @@ a {
   // justify-content: space-around; its help when you need space around your content
   align-items: center;
   padding-left: 20px;
+  z-index: 1;
 }
 
 
@@ -763,7 +828,7 @@ iframe {
   }
 
   .comment-div {
-    width: 30%;
+    width: 30px;
     margin: 0 auto;
     text-align: center;
   }
