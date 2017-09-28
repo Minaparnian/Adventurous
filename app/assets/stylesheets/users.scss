@@ -1043,7 +1043,7 @@ iframe {
             height:100%;
             width:100%;
             position:relative;
-            background-image:url('Mount_Everest-mountains-adventure1.jpg');
+            // background-image:url('Mount_Everest-mountains-adventure1.jpg');
 
    } /* .new-parallax */
       } /* .parallax-1 */
@@ -1071,13 +1071,13 @@ iframe {
 // @media////////////////////////////
 @media (max-width: 375px) {
 
-  @mixin backgrounds(){
-    background-attachment: fixed;
-    background-size: cover!important;
-    background-position: center;
-    background-blend-mode: screen;
-
-  }
+  // @mixin backgrounds(){
+  //   background-attachment: fixed;
+  //   background-size: cover!important;
+  //   background-position: center;
+  //   background-blend-mode: screen;
+  //
+  // }
 
   html, body {
     margin:0; height:100%;
@@ -1225,7 +1225,7 @@ iframe {
             height:100%;
             width:100%;
             position:relative;
-            background-image:url('Mount_Everest-mountains-adventure1.jpg');
+            // background-image:url('Mount_Everest-mountains-adventure1.jpg');
 
    } /* .new-parallax */
       } /* .parallax-1 */
